@@ -41,4 +41,10 @@ SELECT name FROM world
 SELECT name, population, area FROM world
     WHERE area > 3E6 OR population > 250E6
 
+--     8.
+-- Exclusive OR (XOR). Show the countries that are big by area (more than 3 million) or big by population (more than 250 million) but not both. Show name, population and area.
+
+SELECT name, population, area FROM world
+    WHERE population > 250E6 XOR area > 3E6
+    
 
